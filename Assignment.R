@@ -1,8 +1,11 @@
+##Use makeCachematrix fucntion to create a matrix
 makeCacheMatrix <- function(x = matrix()) {
 }
+##To solve the given input matrix
 cacheSolve <- function(x, ...) {
 }
 makeCacheMatrix <- function(x = matrix()){
+  ##to find the inverse of the matrix
   inv <- NULL
   set <- function(y){
     x <<- y
@@ -13,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()){
   getInverse <- function() {inv}
   list(set = set,get = get,setInverse = setInverse,getInverse = getInverse)
 }
+##Code to give a message
 cacheSolve <- function(x, ...){
   inv <- x$getInverse()
   if(!is.null(inv)){
